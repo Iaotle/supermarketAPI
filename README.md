@@ -45,11 +45,3 @@ This works in all functions with a [routing decorator](http://bottlepy.org/docs/
 
 Using this cursor, you can execute SQL queries and retrieve results. Have a look at the [documentation
 of `sqlite3.Cursor`](https://docs.python.org/2/library/sqlite3.html#sqlite3.Cursor).
-
-
-Your task
----------
-
-Now it's up to you to fill in the missing bits and pieces according to the design of your API
-by adding appropriate routes.
-
