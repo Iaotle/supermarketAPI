@@ -104,13 +104,13 @@ def db_update(db, itmid):
 # Error handling
 ###############################################################################
 
+@error(400)
+def error400(error):
+    return 'Bad Request: Invalid JSON.'
+
 @error(404)
 def error404(error):
     return 'Not Found: Item does not exist.'
-
-@error(400)
-def error400(error):
-    return 'Bad Request: Invalid JSON'
 
 ###############################################################################
 # This starts the server
@@ -128,4 +128,4 @@ if __name__ == "__main__":
 
     install(WtDbPlugin())
     install(WtCorsPlugin())
-    run(host='localhost', port=8080, reloader=True, debug=False, autojson=False)
+    run(host='localhost', port=8080, reloader=True, debug=True, autojson=False)
