@@ -128,4 +128,4 @@ if __name__ == "__main__":
 
     install(WtDbPlugin())
     install(WtCorsPlugin())
-    run(host='localhost', port=8080, reloader=True, debug=True, autojson=False)
+    run(host='localhost', port=8080, reloader=True, debug=False, autojson=False)
